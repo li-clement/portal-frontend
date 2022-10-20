@@ -11,7 +11,7 @@ RUN npm run build
 
 
 
-FROM nginx:1.22.0-alpine as production-build
+FROM nginx:1.22.1-alpine as production-build
 COPY ./.nginx/nginx.conf /etc/nginx/nginx.conf
 
 RUN rm -rf /usr/share/nginx/html/*
